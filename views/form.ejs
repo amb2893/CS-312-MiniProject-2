@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Get a Joke</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+
+  <h1>Joke Generator</h1>
+  <form action="/get-joke" method="POST">
+    <label for="category">Category:</label>
+    <select name="category" id="category" required>
+      <option value="Any">Any</option>
+      <option value="Programming">Programming</option>
+      <option value="Misc">Misc</option>
+      <option value="Dark">Dark</option>
+      <option value="Pun">Pun</option>
+      <option value="Spooky">Spooky</option>
+      <option value="Christmas">Christmas</option>
+    </select>
+    <br><br>
+
+    <label for="type">Type:</label>
+    <select name="type" id="type" required>
+      <option value="single">Single (one-liner)</option>
+      <option value="twopart">Two-part</option>
+    </select>
+    <br><br>
+
+    <button type="submit">Get Joke</button>
+  </form>
+  </div>
+</body>
+</html>
